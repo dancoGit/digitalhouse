@@ -12,7 +12,7 @@ body {
 
 /******* Generics *******/
 
-.center, .header, .section, .image-student, .exercise-links {
+.center, .header, .section, .image-student, .exercise-links, .footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,8 +48,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 0 0 80px 0;
-  height: 520px;
+  height: 499px;
 }    
 
 .about-me {
@@ -59,7 +58,6 @@ body {
 
 .image-student {
   width: 40%;
-  margin-top: 100px;
 }
 
 .name {
@@ -97,8 +95,8 @@ body {
 }  
 
 .format-less-greater-than {
-  color: #9c9c9c;
-  font-size: 150px;
+  color: #36363B;
+  font-size: 100px;
   width: 10%;
   font-weight: bold;
 }
@@ -123,15 +121,15 @@ body {
   background: #09BC9C;
   width: 220px;
   height: 100px;
-  margin: 100px auto;
+  margin: 70px auto;
   transition: .2s linear;
   -webkit-clip-path: polygon(12% 12%, 70% 10%, 68% 45%, 44% 44%, 28% 61%, 30% 44%, 7% 45%);
-  top: 140px;
+  top: 120px;
   left: -200px;
 }
 
 .box h1 {
-  position: absolute;
+  position: relative;
   display: inline-block;
   top: 15px;
   left: 30px;
@@ -140,3 +138,19 @@ body {
   color: black;
 }
 
+/**** Footer ****/
+
+.footer {
+  display: flex;
+  height: 80px;
+  text-transform: capitalize;
+  font-size: 20px;
+  word-spacing: 10px; 
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
+}
