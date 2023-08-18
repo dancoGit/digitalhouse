@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #100F17;
+  color: white;
+}
+
+/******* Generics *******/
+
+.center, .header, .section, .image-student, .exercise-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-center {
+  align-items: center;
+}
+
+.shadow, .header {
+  box-shadow: 0 8px 10px -6px black;
+}  
+/******* Headers *******/
+
+.header {
+  display: flex;
+  height: 100px;
+  text-transform: capitalize;
+  font-size: 40px;
+  word-spacing: 10px;
+}  
+
+/******* Section *******/
+
+.section {
+  flex-direction: column;
+  min-height: 70vh;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.container-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 0 80px 0;
+  height: 520px;
+}    
+
+.about-me {
+  top: 0;
+  width: 60%;
+}
+
+.image-student {
+  width: 40%;
+  margin-top: 100px;
+}
+
+.name {
+  font-size: 50px;
+  font-weight: bold;
+}  
+
+.extra-info {
+  font-size: 17px;
+}  
+
+.education {
+  margin-top: 20px;
+}  
+
+.media-info{
+  margin-top: 20px;
+}  
+
+.icons {
+  margin-right: 10px;
+}  
+
+.icons img {
+  height: 20px;
+} 
+
+.list-media {
+  display: flex;
+}  
+
+.exercises {
+  display: flex;
+  width: 100%;
+}  
+
+.format-less-greater-than {
+  color: #9c9c9c;
+  font-size: 150px;
+  width: 10%;
+  font-weight: bold;
+}
+
+.exercise-links {
+  width: 80%;
+}
+
+.exercise-links a {
+  text-decoration: none;
+  color: gray;
+  margin-right: 30px;
+}
+
+.exercise-links a:hover {
+  color: white;
+}
+
+/**** Bubble ****/
+.box {
+  position: relative;
+  background: #09BC9C;
+  width: 220px;
+  height: 100px;
+  margin: 100px auto;
+  transition: .2s linear;
+  -webkit-clip-path: polygon(12% 12%, 70% 10%, 68% 45%, 44% 44%, 28% 61%, 30% 44%, 7% 45%);
+  top: 140px;
+  left: -200px;
+}
+
+.box h1 {
+  position: absolute;
+  display: inline-block;
+  top: 15px;
+  left: 30px;
+  font-size: 1.2em;
+  transition: all .2s linear;
+  color: black;
+}
+

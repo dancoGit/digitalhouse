@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'dennice-menace';
+  src: url('../font/FontsFree-Net-Dennis_Regular.ttf');
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+}
+
+.banner-image {
+  width: 108%;
+  background-image: url(../img/fondo.avif);
+  height: 150px;
+  background-size: 100% 100%;
+  display: block;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+.name {
+  margin-top: 75px;
+  color: white;
+  font-size: 20px;
+}
+
+.custom-font, .nav, .nav-about-me {
+  font-family: dennice-menace;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto {
+  height: 120px;
+  margin-top: 70px;
+}
+
+.nav {
+  margin-top: 170px;
+}
+
+.link-img {
+  text-decoration: none;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+.icons {
+  margin-left: 10px;
+  letter-spacing: 10px;
+}
+
+hr {
+  width: 200px;
+  height: 1px;
+  background-color: #551A8B;
+}
+
+.copyrigth {
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+/* Acerca de mí*/
+
+.title-subtitle, .curriculum, .title {
+  background-color: #C4C4C4;
+  text-transform: uppercase;
+  color: #005677;
+}
+
+.curriculum {
+  margin-top: 100px;
+  height: 25px;
+  font-size: 11px;
+}
+
+.title {
+  font-size: 10px;
+}
+
+section div h1 span {
+  padding: 5px;
+}
+
+.bold-word {
+  font-weight: bold;
+}
+
+.italic-word {
+  font-style: italic;
+}
+
+.data {
+  list-style-type: none;
+  margin-left: -15px;
+}
+
+.nav-about-me {
+  margin-top: 10px;
+}

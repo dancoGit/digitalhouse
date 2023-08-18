@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../font/Roboto-Regular.ttf');
+}  
+
+body {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #E5E5E5;
+}
+
+/***** Utils *****/
+
+.white-color, .company, .menu, .delivery-text, .menu-footer, .company-footer {
+  color: white;
+}
+
+.red-color, .front, .podio-title {
+  color: red;
+}
+
+.green-color, .pizza {
+  color: green;
+}
+
+.vertical-center, .logo, .menu {
+  align-items: center;
+}
+
+.bold-text, .logo, .delivery-text, .podio-title, .podio-five-list, .podio-five-list-group {
+  font-weight: bold;
+}
+
+.shadow, .container-header, .container-footer {
+  box-shadow: 0 8px 10px -6px black;
+}
+
+.font-size-24, .company, .delivery, .podio-title {
+  font-size: 24px;
+}
+
+.center, .podio-title, .podio-five, .section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bacground-header-footer, .container-header, .container-footer {
+  background-color: #222222;
+}
+
+/***** Header *****/
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+}
+
+.logo {
+  display: flex;
+}
+
+.company {
+  padding-left: 10px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.item-nav {
+  padding-right: 15px;
+}
+
+/***** Section *****/
+
+.section {
+  background-color: #F3F3F3;
+  height: 430px;
+}
+
+.container-section {
+  display: flex;
+}
+
+.cards, .delivery, .podio {
+  width: 490px;
+  height: 350px;
+}  
+
+.delivery {
+  background-image: url('../img/delivery.png');
+  /*position: absolute;*/
+  /*width: 100%;*/
+  top: 0;
+  left: 0;
+  margin-right: 5px;
+}
+
+.delivery-text {
+  margin: 20px 0 0 10px;
+}
+
+.podio {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.podio-title {
+  margin: 22px 0 70px 10px;
+}
+
+.podio-five {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding: 0 80px 0 80px;
+}
+
+.podio-five-list-title {
+  margin-bottom: 20px;
+}
+
+.podio-five-list, .menu-footer {
+  font-size: 16px;
+}
+
+.podio-five-list li {
+  margin-bottom: .5rem;
+}
+
+/* Footer */
+
+.container-footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 20px 20px 10px 25px;
+}
+
+.menu-footer {
+  list-style: none;
+}
+
+.menu-footer li {
+  margin-bottom: 1.1rem;
+}
+
+.company-footer {
+  font-size: 20px;
+  margin-left: 10px;
+}
