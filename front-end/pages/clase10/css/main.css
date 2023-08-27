@@ -1,0 +1,20 @@
+:root {
+  --backgroundcolor-yellow: #D1891C;
+  --backgroundcolor-blue: #00669F;
+  --backgroundcolor-card: #F3F3F3;
+  --title-text-color: #fff;
+  --footer-text-color: #FFF9F9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

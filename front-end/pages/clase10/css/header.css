@@ -1,0 +1,35 @@
+.vertical-align-center, 
+.head-discount, 
+.head-title {
+  display : flex;
+  align-items : center;
+}
+
+.shadow, 
+header {
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.head-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  font-size: 25px;
+}
+
+.head-discount{
+  background-color: var(--backgroundcolor-yellow);
+  height: 40%;
+}
+
+.head-title {
+  background-color: var(--backgroundcolor-blue);
+  font-size: 1.5em;
+  color: var(--title-text-color);
+  height: 60%;
+}
+
+.head-container div span {
+  padding-left: 20px;
+}
