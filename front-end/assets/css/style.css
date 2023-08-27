@@ -102,6 +102,8 @@ body {
 }
 
 .exercise-links {
+  display: flex;
+  flex-wrap: wrap;
   width: 80%;
 }
 
