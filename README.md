@@ -10,6 +10,7 @@ Repositorio de ejercicios
 
 #### Clases:
 
-1. Clase 6 - Currículum Vitae
-2. Clase 7 - Héroes
-3. Clase 8 - Pizza&Front
+1. Clase 6 	- Currículum Vitae
+2. Clase 7 	- Héroes
+3. Clase 8 	- Pizza&Front
+4. Clase 10	- Cards Super Heroes responsive
