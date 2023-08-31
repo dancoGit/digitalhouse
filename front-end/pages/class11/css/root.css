@@ -1,0 +1,21 @@
+:root {
+  --background-color-blue: #00669F;
+  --color-white: #fff;
+  --background-color-button: #1CD1B0;
+  --background-color-nav: #001D2D;
+  --color-black: black;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-white);
+}
