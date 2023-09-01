@@ -4,17 +4,28 @@
   padding: 0;
 }
 
+/**** Colors ****/
+:root{
+  --color-purple-strong: #8B48BF;
+  --color-purple-light: #8B48BF4D;
+  --color-gray-ligth: #B3B2B7;
+  --color-black: black;
+  --color-white: white;
+  --color-cyan: #3CDDF3;
+}
+
 body {
   font-family: 'Comfortaa', cursive;
+  font-family: 'Fredoka', sans-serif;
   min-height: 100vh;
   max-width: 1024px;
   margin: 0 auto;
-  background-color: #E5E5E5;
-  background-color: #fff;
-}
+  background-color: var(--color-white);
+}  
+
+/*********************** Header **********************/
 
 header {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,6 +48,10 @@ header {
   padding: 50px 0;
 }
 
+.header-menu-hamburger {
+  display: none;
+}
+
 .header-menu ul {
   display: flex;
   justify-content: flex-end ;
@@ -54,14 +69,17 @@ a {
   font-weight: bold;
   color: var(--color-white);
   text-decoration: none;
-}
+}  
 
 a:hover {
   font-weight: 100;
-}
+}  
 
-.menu-hamburger {
-  display: none;
+.header-info-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .header-info {
@@ -70,11 +88,24 @@ a:hover {
   align-items: flex-end;
   height: 90%;
   text-align: right;
-}
+}  
 
 .header-title {
   font-size: 7rem;
   width: 80%;
+}  
+
+.header-sports-man {
+  width: 60%;
+  position: relative;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: space-evenly;
+  text-align: right;
 }
 
 .header-title {
@@ -86,41 +117,19 @@ a:hover {
 
 .header-sub-title {
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: 1.5rem;
-}
+}    
 
 .header-button {
-  background-color: #8B48BF;
+  background-color: var(--color-purple-strong);
   color: #fff;
   border-radius:25px;
   border: none;
-  width: 8rem;
-  height: 2.6rem;
-}
-
-.header-info-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.header-sports-man {
-  /* width: 45vw; */
-  width: 60%;
-  /* border: 1px solid black; */
-  position: relative;
-}
-
-.header-info {
-/*   border: 1px solid black; */
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  justify-content: space-evenly;
-  text-align: right;
-}
+  width: 6rem;
+  height: 2rem;
+  font-size: .6rem;
+}    
 
 .header-sports-man img {
   position: inherit;
@@ -128,24 +137,14 @@ a:hover {
   width: 85%;
 }
 
-/* OK header*/
 @media(width <= 480px){
 
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  
+  /*********************** Header **********************/
   .header-container {
     width: 85%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
-  
-  .menu-hamburger {
+
+  .header-menu-hamburger {
     display: block;
   }
 
@@ -154,28 +153,22 @@ a:hover {
   }
 
   .header-nav {
-     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
     margin-bottom: 2rem;
   }
-  
+
   .header-sports-man {
     width: 100%;
     margin-bottom: 6.5rem;
   }
   
   .header-sports-man img {
-    width: 25rem;
+    position: inherit;
+    max-width: 25rem;
+    width: 100%;
   }
   
   .header-info {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    justify-content: space-evenly;
-    text-align: right;
   }
 
   .header-info-container {
@@ -183,6 +176,89 @@ a:hover {
   }
 
   .header-sub-title {
-    width: 350px;
+    width: 90%;
+    font-size: .8rem;
+  }
+
+/*********************** Main **********************/
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /****** Question ******/
+  .main-container-question {
+    background-color: var(--color-cyan);
+    color: #fff;
+    padding: 35px 15px;
+    width: 100%;
+  }
+  
+  .main-question {
+    font-size: 1.7rem;
+  }
+  
+  .main-question::after {
+    content: "What´s different \A between pros?";
+    white-space: pre;
+  }
+  
+  .main-question-description {
+    font-size: .7rem;
+  }
+  
+  .main-question-description::after {
+    content: "\A\A\AManage provides all the functionality your \A teas needs, without the complexity. Our software is \A tailor-made for modern digital product teams";
+    white-space: pre;
+  }
+  
+  /****** Answer ******/
+
+  .main-containe-answer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 40px 0;
+  }
+
+  .main-answers{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    color: var(--color-gray-ligth);
+    font-size: 12px;
+  }
+
+  .main-answer-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-number-question {
+    width: 100%;
+    background-color: var(--color-purple-light);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .main-number-question span:nth-child(1) {
+    background-color: var(--color-purple-strong);
+    color: #fff;
+    display: inline-block;
+    width: 42px;
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px;
+  }
+  .main-number-question span:nth-child(2) {
+    color: var(--color-black);
+    font-weight: bold;
+  }
+
+  .main-answer-description {
+    padding-right: 20px;
   }
 }
