@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 11 - Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/root.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+  <header>
+    <div class="discount">
+      20% de descuento en todos los productos!
+    </div>
+    <div class="title-company">
+      <img src="./img/logo.png" alt="Logo">
+      <span>Nombre Tienda</span>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Registrarme</a></li>
+        <li><a href="#">Ingresar</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form action="#">
+      <div class="form">
+        <h2>Añadí tu super!</h2>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+        <div class="form-data">
+          <div class="name">
+            <label for="name">*Nombre</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="species">
+            <label for="specie">*Especie</label>
+            <input type="text" id="specie" name="specie" required>
+          </div>
+          <div class="date">
+            <label for="date">&nbsp;Fecha</label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div class="photo">
+            <label for="photo">&nbsp;Agrega Foto</label>
+            <input type="file" id="photo" name="photo">
+          </div>
+          <div class="descripcion">
+            <textarea name="description" id="descripcion" cols="50" rows="14" placeholder="Descripción"></textarea>
+          </div>
+          <div class="from-characterictic">
+            <div class="powers">
+              <span>Poderes</span>
+              <label>
+                <input type="checkbox" id="fly" name="fly" value="fly">
+                <span>Volar</span>
+              </label>
+              <label>
+                <input type="checkbox" id="super-smart" name="super-smart" value="super-smart">
+                <span>Superinteligente</span>
+              </label>
+              <label>
+                <input type="checkbox" id="laser-beam-sight" name="laser-beam-sight" value="laser-beam-sight">
+                <span>Vista de rayo láser</span>
+              </label>
+              <label>
+                <input type="checkbox" idwallet-lot-of -money name="wallet-lot-of -money" value="wallet-lot-of -money">
+                <span>Billetera gorda</span>
+              </label>
+            </div>
+            <hr>
+             <div class="character-type">
+              <span>&nbsp;Tipo de personaje</span>
+              <label>
+                <input type="radio" id="" name="">
+                <span>Héroe / Heroina</span>
+              </label>
+              <label>
+                <input type="radio" id="" name="">
+                <span>Villano / Villana</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-button">
+          <button class="button">Añadir</button>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer>
+    Todos los derechos reservados a FRONT END 1
+  </footer>
+</body>
+</html>

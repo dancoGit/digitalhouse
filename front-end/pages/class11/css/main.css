@@ -1,0 +1,134 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  background-color: var(--background-color-blue);
+  /*max-width: 400px;*/
+  width: 700px;
+  border-radius: 20px;
+  border: none;
+  margin: 30px;
+  text-align: center;
+  color: var(--color-white);
+  height: auto;
+}
+
+.form h2 {
+  font-size: 25px;
+}
+
+.form p {
+  font-size: 15px;
+  padding: 5px 0;
+}
+
+.form-data {
+  display: flex;
+  /*flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px 70px;
+}
+
+input {
+  border: none;
+  height: 3em;
+  width: 19.7em;
+  margin: 13px 0;
+}
+
+.name,
+.species,
+.date,
+.photo,
+.powers,
+.character-type {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#date {
+  padding: 0 10px;
+}
+
+.photo {
+  margin: 10px 0;
+}
+
+.button {
+  background-color: var(--background-color-button);
+  font-size: 30px;
+  font-weight: bold;
+  height: 2.0em;
+  width: 10em;
+  border: none;
+}
+
+.round-imputs,
+input,
+.button,
+textarea {
+  border-radius: 15px;
+}
+
+textarea {
+  width: 19.7em;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.from-characterictic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 16.7em;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  width: 16px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.powers {
+  font-size: 14px;
+}
+
+.powers label,
+.character-type label {
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+
+hr {
+  margin: 19px 0;
+  width: 16.7em;
+}
+
+.character-type {
+  margin-top: 10px;
+}
+
+#descripcion {
+  padding: 10px;
+}
+
+.form-button {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
