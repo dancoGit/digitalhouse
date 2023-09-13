@@ -95,16 +95,28 @@ body {
 }  
 
 .format-less-greater-than {
-  color: #36363B;
+  color: #727277;
   font-size: 100px;
   width: 10%;
   font-weight: bold;
+  text-shadow: 0 0 1px;
+  animation: border-shadow 3s infinite;
+}
+
+@keyframes border-shadow {
+  0% {
+    text-shadow: 0 0 3px;
+  }
+  50% {
+    text-shadow: 0 0 10px;
+  }
 }
 
 .exercise-links {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
+  transform: translateY(0%);
 }
 
 .exercise-links a {
@@ -138,6 +150,46 @@ body {
   font-size: 1.2em;
   transition: all .2s linear;
   color: black;
+}
+
+.link-info {
+  opacity: .7;
+  float: left;
+  transition: .3s;
+}
+
+.link-info:hover{
+  opacity:1
+}
+
+.link-info:hover .class-info{
+  opacity: 1;
+}
+
+.class-info {
+  opacity: 0;
+  top: 0px;
+  position: absolute;
+  background: #FFF;
+  font-size: .8em;
+  padding: 4px 6px;
+  letter-spacing: 0.05em;
+  transform: translateX(-33%);
+  height: 2em;
+  border-radius: 2px;
+  color: black;
+}
+
+.shape {
+  position: relative;
+  left: 55%;
+  transform: translateX(-50%);
+  top: .2em;
+  width: 22px;
+  height: 0;
+  border-top: 10px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
 }
 
 /**** Footer ****/
