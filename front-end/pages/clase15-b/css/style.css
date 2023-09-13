@@ -4,24 +4,22 @@
   padding: 0;
 }
 
+:root {
+  --black: black;
+  --white: white;
+  --border-gray: #e7e7e7;
+  --input-background-color: #FAFAFA;
+  --link-color: #1CA0F6;
+  --pink-color: #F44893;
+  --main-background: #fcfcfc;
+}
+
 body {
   max-width: 1024px;
   max-height: 100vh;
   margin: auto;
-  font-family: 'Akatab', sans-serif;
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-family: 'Fredoka', sans-serif;
   font-family: 'Roboto', sans-serif;
-}
-
-:root {
-  --black: black;
-  --white: white;
-  --border-gray: #909090;
-}
-
-main {
-  display: flex;
+  background-color: var(--pink-color);
 }
 
 .border-gray,
@@ -36,28 +34,181 @@ main {
   border-radius: 5px;
 }
 
+header,
+main {
+  background-color: var(--white);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+#btnSearch {
+  padding: 10px;
+}
+
+.search input {
+  height: 2rem;
+  width: 20rem;
+  border-radius: 5px;
+  background-color: var(--input-background-color);
+  border: 1px solid var(--border-gray);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-background);
+}
+
+.main-container {
+  margin: 10px 0;
+}
+
+.faces,
+.card {
+  background-color: var(--white);
+}
+
+.faces {
+  margin: 20px 0;
+}
+
+.faces-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 17px 10px;
+} 
+
+.card {
+  margin: 20px 0 80px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  height: 3rem;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.points {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.card-header span {
+  padding-left: 10px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.data p {
+  margin: 10px 0 10px 25px;
+  font-size: .7rem;
+  font-weight: 900;
+}
+
+.data p:nth-child(2) {
+  font-weight: 0;
+  color: var(--border-gray);
+}
+
+.img {
+  width: 89%;
+}
+
+.actions {
+  margin: 10px 0 10px 25px;
+}
+
+.action {
+  padding-right: 20px;
+  border: 1 px solid red;
+}
+
+.side-info {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 0 120px;
+  width: 19rem;
+}
+
+.block-avatars,
+.setting,
+.setting-suggestions {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  height: 2.5rem;
+  font-size: .5rem;
+}
+
+.setting {
+  margin-bottom: 20px;
+}
+
+.avatar-block {
+  display: flex;
+  align-items: center;
+}
+.avatar-block span {
+  padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.suggestions p {
+  font-size: 10px;
+}
+
+footer p{
+  font-size: .7rem;
+  padding: 8px 0;
+}
+
 footer {
   text-align: center;
   color: var(--white);
   background-color: var(--black);
   height: 2rem;
 }
-
 @media( width <= 480px) {
   
-  /* Header */
-  .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 10px;
+  header,
+  main,
+  footer {
+    width: 457px;
   }
-  
+
   main {
     display: flex;
     flex-direction: column;
     align-items: center;;
-    padding: 20px 0 50px 0;
   }
   
   .main-container {
@@ -67,7 +218,6 @@ footer {
   .faces {
     height: 6rem;
     width: 100%;
-    margin-bottom: 20px;
   }
   
   .faces-img {
@@ -75,23 +225,6 @@ footer {
     justify-content: space-around;
     align-items: center;
     margin: 17px 10px;
-  } 
-
-  .card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: bold;
-    height: 3rem;
-    padding: 0 10px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid var(--border-gray);
-  }
-  
-  .name {
-    display: flex;
-    align-items: center;
-    width: 50%;
   }
   
   .card-header span {
@@ -129,7 +262,7 @@ footer {
     border: 1 px solid red;
   }
 
-  footer p{
+  footer p {
     font-size: .7rem;
     padding: 8px 0;
   }
