@@ -5,14 +5,15 @@
 }
 
 :root {
-  --black: black;
   --white: white;
   --red: red;
   --border-gray: #e7e7e7;
-  --input-background-color: #FAFAFA;
+  --green: #619D00;
   --link-color: #1CA0F6;
   --body-background: #38454F;
-  --header-background: #222222;
+  --main-background: #f3f3f3;
+  --header-footer-background: #222222;
+  --copy-rigth-background: #f1eeee;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
 }
 
 .header-container {
-  background-color: var(--header-background);
+  background-color: var(--header-footer-background);
   height: 5rem;
   display: flex;
   justify-content: space-between;
@@ -86,6 +87,58 @@ a {
   border: none;
 }
 
+.main-container {
+  background-color: var(--main-background);
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  padding: 30px 0;
+  background-color: var(--white);
+  border-radius: 6px;
+}
+
+.disc {
+  padding: 0 0 25px 0;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.price {
+  text-align: left;
+  padding: 15px 0 0 30px;
+}
+
+.price p {
+  padding-bottom: 5px;
+}
+
+.price p:nth-child(1) {
+  font-weight: bold;
+}
+
+.price p:nth-child(2) {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.price p:nth-child(3) {
+  font-size: 7px;
+  color: var(--green);
+}
+
+.sub-title {
+  margin-top: 30px;
+}
+
 @media(width <= 480px) {
   .nav {
     display: none;
@@ -95,9 +148,59 @@ a {
     display: block;
   }
 
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 220px;
+    margin: 10px 0;
+  }
+
   .discount-message {
     width: 85%;
     height: 35%;
     text-align: center;
   }
+
+  .banner {
+    margin-bottom: 10px;
+  } 
+    
+  .logo-social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--header-footer-background);
+  }
+
+  .social-media {
+    border: 1px red;
+    margin-left: 30px;
+  }
+
+  .social-media div {
+    font-size: 25px;
+    padding: 15px 0 0 0px;
+    color: var(--white);
+  }
+  
+  .social-media-img {
+    padding: 20px 33px 0 4px;
+  }
+
+  .cp {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 10px;
+    font-weight: bold;
+    height: 1.5rem;
+    background-color: var(--copy-rigth-background);
+  }
+    
 }
