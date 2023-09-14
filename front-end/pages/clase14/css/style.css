@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: black;
+  --white: white;
+  --red: red;
+  --border-gray: #e7e7e7;
+  --input-background-color: #FAFAFA;
+  --link-color: #1CA0F6;
+  --body-background: #38454F;
+  --header-background: #222222;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1024px;
+  max-height: 100vh;
+  margin: auto;
+  background-color: var(--body-background);
+}
+
+.menu {
+  display: none;
+}
+
+.header-container {
+  background-color: var(--header-background);
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 23rem;
+}
+
+.links ul {
+  display: flex;
+}
+
+
+li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.buy {
+  background-image: url('../img/header-background.png');
+  height: 513px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.discount-message {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.discount-message span {
+  color: var(--red);
+}
+
+.btn-buy {
+  background-color: var(--red);
+  color: var(--white);
+  width: 9rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+}
+
+@media(width <= 480px) {
+  .nav {
+    display: none;
+  }
+  
+  .menu {
+    display: block;
+  }
+
+  .discount-message {
+    width: 85%;
+    height: 35%;
+    text-align: center;
+  }
+}
