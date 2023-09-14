@@ -33,6 +33,7 @@ body {
   height: 5rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0 20px;
 }
@@ -48,13 +49,12 @@ body {
   display: flex;
 }
 
-
 li {
   margin-right: 20px;
   list-style: none;
 }
 
-a {
+li>a {
   color: var(--white);
   text-decoration: none;
 }
@@ -71,6 +71,7 @@ a {
 .discount-message {
   font-size: 3rem;
   font-weight: bold;
+  text-align: center;
   color: var(--white);
 }
 
@@ -90,19 +91,22 @@ a {
 .main-container {
   background-color: var(--main-background);
   text-align: center;
-  padding: 20px 0 40px 0;
+  align-items: center;
+  padding: 20px 0 70px 0;
 }
 
 .cards-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   width: 220px;
-  padding: 30px 0;
+  padding: 27px 0;
+  margin: 0 45px 20px 0;
   background-color: var(--white);
   border-radius: 6px;
 }
@@ -135,8 +139,63 @@ a {
   color: var(--green);
 }
 
+.products {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.title {
+  background-color: var(--main-background);
+  text-align: center;
+  padding-top: 20px;
+}
+
 .sub-title {
-  margin-top: 30px;
+  margin-top: 70px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  color: var(--white);
+  top: 40%;
+  right: 10%;
+}
+
+.banner-img {
+  width: 23rem;
+  margin: 10px 0;
+}
+
+.logo-social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  height: 12rem;
+  color: var(--white);
+  background-color: var(--header-footer-background);
+}
+
+.social-media div {
+  padding-bottom: 10px;
+}
+
+.social-media-img {
+  padding-right: 12px;
+}
+
+.cp {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 10px;
+  font-weight: bold;
+  height: 1.5rem;
+  background-color: var(--copy-rigth-background);
 }
 
 @media(width <= 480px) {
@@ -165,10 +224,24 @@ a {
     text-align: center;
   }
 
+  .products {
+    display: flex;
+    flex-direction: column;
+  }
+
   .banner {
     margin-bottom: 10px;
   } 
-    
+
+  .banner-img {
+    width: 20rem;
+  }
+
+  .banner-text {
+    top: 40%;
+    right: 23%;
+  }
+
   .logo-social-media {
     display: flex;
     flex-direction: column;
@@ -192,15 +265,6 @@ a {
   
   .social-media-img {
     padding: 20px 33px 0 4px;
-  }
-
-  .cp {
-    text-align: center;
-    padding: 5px 0;
-    font-size: 10px;
-    font-weight: bold;
-    height: 1.5rem;
-    background-color: var(--copy-rigth-background);
   }
     
 }
